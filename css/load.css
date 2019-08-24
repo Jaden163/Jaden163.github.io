@@ -1,0 +1,47 @@
+body {
+    background: black;
+}
+
+.mid-container span {
+    color: #66ff66;
+    font-family: monospace;
+    font-size:40px;
+}
+
+.logoLoad{
+    width:200px;
+}
+
+.mid-container{
+    text-align:center;
+    margin-top:20vh;
+
+
+}
+
+.blinker {
+    opacity: 1;
+    margin-bottom: -2px;
+    height: 15px;
+    margin-left: -15px;
+    border-left: 15px solid #66ff66;
+    animation: blinker 0.9s steps(2, start) infinite;
+}
+
+@keyframes blinker {
+    to {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    span{
+        font-size:28px;
+    }
+}
+
+
+
+
+
+

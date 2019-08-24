@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel = "stylesheet" type = "text/css" href = "css/load.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+
+
+<section class="mid-container">
+
+<img class="logoLoad" src="img/logoName.png" ><br>
+<span id="greeting"></span><br>
+<span id="text" class="auto-type"></span><span class='blinker'>&#32;</span>
+
+</section>
+
+
+</body>
+
+<script>
+
+
+getGreeting();
+
+var data = [
+  {
+    text: "<span>Welcome to my website! </span>"
+  }
+];
+
+var allElements = document.getElementsByClassName("auto-type");
+for (var j = 0; j < allElements.length; j++) {
+  var currentElementId = allElements[j].id;
+  var currentElementIdContent = data[0][currentElementId];
+  var element = document.getElementById(currentElementId);
+  var devTypeText = currentElementIdContent;
+
+  // type code
+  var i = 0, isTag, text;
+  (function type() {
+    text = devTypeText.slice(0, ++i);
+    if (text === devTypeText) return;
+    element.innerHTML = text + `<span class='blinker'>&#32;</span>`;
+    var char = text.slice(-1);
+    if (char === "<") isTag = true;
+    if (char === ">") isTag = false;
+    if (isTag) return type();
+    setTimeout(type, 100);
+  })();
+}
+
+function getGreeting(){
+    let time=new Date();
+    let hour = time.getHours();
+    let hourInt = parseInt(hour, 10);
+    if (hourInt>6 && hourInt<12){
+        document.getElementById('greeting').innerHTML='Good Morning';
+    }
+    else if(hourInt>12 && hourInt<18){
+        document.getElementById('greeting').innerHTML='Good Afternoon';
+    }else{
+        document.getElementById('greeting').innerHTML='Good Evening';
+    }
+}
+
+
+
+
+</script>
+</html>

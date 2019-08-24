@@ -1,1 +1,179 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel = "stylesheet" type = "text/css" href = "css/index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display" rel="stylesheet">
+    <link rel="icon" href="img/logo.png" type="image/gif">
+
+
+</head>
+
+
+<body onload="preloader()" style="margin:0;">
+
+<div id="loader"></div>
+
+
+<div style="display:none;" id="myDiv">
+<section id="nav-placeholder"></section>
+
+
+
+
+<section class="intro">
+
+<div class="window">
+  <div class="titlebar">
+    <div class="buttons">
+      <div class="close">
+        <a class="closebutton" href="#"><span><strong>x</strong></span></a>
+      </div>
+      <div class="minimize">
+        <a class="minimizebutton" href="#"><span><strong>&ndash;</strong></span></a>
+      </div>
+      <div class="zoom">
+        <a class="zoombutton" href="#"><span><strong>+</strong></span></a>
+      </div>
+    </div>
+    Jaden Chen -- -bash -- 80x24
+  </div>
+  <div class="content">
+  <h5 class="mac-first">
+  Current login: <span class="minmic"><span id="day"></span>  <span id="date"></span>  <span id="time"></span> </span>
+  on ttys000
+</h5>
+        <h3> Greetings, my name is</h3>
+        <h1> JunHao (Jaden) Chen </h1>
+        <p>I am a computer science student based in New York City. Currently, I am a junior pursuing a Bachelor's degree at NYU Tandon
+         with concentrations in game development, machine learning and cybersecurity. In my spare time, I am an avid Formula
+         1 fan and enjoys swimming on the weekend.  </p>
+        <p class="resume"><a href="https://drive.google.com/file/d/1lncionRNszpyOz58peYJCoNHfF3-F0kC/view?usp=sharing"
+        target="_blank" class="button">Resume</a></p>
+  </div>
+</div>
+</section>
+
+<section class="margin-container">
+
+
+</section>
+
+</div>
+
+
+</body>
+
+
+<script>
+
+
+    function preloader() {
+        if (!sessionStorage.visited) {
+            sessionStorage.visited="true";
+            $("#loader").load("load.html");
+            let myVar = setTimeout(showPage, 3200);
+        }else{
+            showPage();
+        }
+    }
+
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+    }
+
+    $(function(){
+        $("#nav-placeholder").load("navbar.html");
+    });
+
+
+    getTime();
+    // getTimeAuto();
+    //
+    // function getTimeAuto(){
+    //     setInterval(function()
+    //     {
+    //         let time=new Date();
+    //         let hour = time.getHours();
+    //         let minute = time.getMinutes();
+    //         let seconds = time.getSeconds();
+    //         let hourInt = parseInt(hour, 10);
+    //         let result;
+    //         if (hourInt>6 && hourInt<12){
+    //             document.getElementById('greeting').innerHTML='Good Morning';
+    //         }
+    //         else if(hourInt>12 && hourInt<18){
+    //             document.getElementById('greeting').innerHTML='Good Afternoon';
+    //         }else{
+    //             document.getElementById('greeting').innerHTML='Good Evening';
+    //         }
+    //         if (hourInt > 12) {
+    //              result =(hourInt % 12).toString() + ":" + minute + " PM";
+    //         } else {
+    //             result= hourInt.toString() + ":" + minute+ " AM";
+    //         }
+    //         document.getElementById('timezone').innerHTML=result;
+    //     },1000);
+    // }
+
+    function getTime() {
+            let time=new Date();
+            let hour = time.getHours();
+            let minute = time.getMinutes();
+            let seconds = time.getSeconds();
+            let weekday = new Array(7);
+            weekday[0] =  "Sun";
+            weekday[1] = "Mon";
+            weekday[2] = "Tues";
+            weekday[3] = "Wed";
+            weekday[4] = "Thurs";
+            weekday[5] = "Fri";
+            weekday[6] = "Sat";
+            let month = new Array(11);
+            month[0] = "January";
+            month[1] = "February";
+            month[2] = "March";
+            month[3] = "April";
+            month[4] = "May";
+            month[5] = "June";
+            month[6] = "July";
+            month[7] = "August";
+            month[8] = "September";
+            month[9] = "October";
+            month[10] = "November";
+            month[11] = "December";
+            document.getElementById('date').innerHTML=month[time.getMonth()]+ "  "+ time.getDate();
+            document.getElementById('time').innerHTML=hour+':'+minute+':'+seconds;
+            document.getElementById('day').innerHTML=weekday[time.getDay()];
+    }
+
+    function openCity(evt, work) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(work).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+    document.getElementById("defaultOpen").click();
+
+    
+    
+    
+    
+    
+    
+
+</script>
+</html>

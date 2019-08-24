@@ -1,0 +1,268 @@
+body{
+    /*background-color: #e6e6e6;*/
+    background-color: #101010;
+    color:white;
+    overflow-x:hidden;
+    box-sizing:border-box;
+
+}
+
+
+
+/*mac window*/
+
+.window {
+    border: 1px solid #acacac;
+    border-radius: 6px;
+    box-shadow: 0px 0px 20px #acacac;
+    /*background: white;*/
+    font-family: HelveticaNeue, 'Helvetica Neue', 'Lucida Grande', Arial, sans-serif;
+    min-height:300px;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.5)),url("../img/tandon.jpg");
+    background-position: 0 3%;
+    background-size: cover;
+}
+
+.window a{
+    text-decoration:none;
+}
+
+.window span {
+    line-height: 9px;
+    vertical-align: 50%;
+}
+
+.titlebar {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #ebebeb, color-stop(1.0, #d5d5d5)));
+    background: -webkit-linear-gradient(top, #ebebeb, #d5d5d5);
+    background: -moz-linear-gradient(top, #ebebeb, #d5d5d5);
+    background: -ms-linear-gradient(top, #ebebeb, #d5d5d5);
+    background: -o-linear-gradient(top, #ebebeb, #d5d5d5);
+    background: linear-gradient(top, #ebebeb, #d5d5d5);
+    color: #4d494d;
+    font-size: 11pt;
+    line-height: 20px;
+    text-align: center;
+    width: 100%;
+    height: 20px;
+    border-top: 1px solid #f3f1f3;
+    border-bottom: 1px solid #b1aeb1;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.buttons {
+    padding-left: 8px;
+    padding-top: 3px;
+    float: left;
+    line-height: 0px;
+}
+
+.buttons:hover a {
+    visibility: visible;
+}
+
+.close {
+    background: #ff5c5c;
+    font-size: 9pt;
+    width: 11px;
+    height: 12px;
+    border: 1px solid #e33e41;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.close:active {
+    background: #c14645;
+    border: 1px solid #b03537;
+}
+
+.close:active .closebutton {
+    color: #4e0002;
+}
+
+.closebutton {
+    color: #820005;
+    visibility: hidden;
+    cursor: default;
+}
+
+.minimize {
+    background: #ffbd4c;
+    font-size: 9pt;
+    line-height: 11px;
+    margin-left: 4px;
+    width: 11px;
+    height: 12px;
+    border: 1px solid #e09e3e;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.minimize:active {
+    background: #c08e38;
+    border: 1px solid #af7c33;
+}
+
+.minimize:active .minimizebutton {
+    color: #5a2607;
+}
+
+.minimizebutton {
+    color: #9a5518;
+    visibility: hidden;
+    cursor: default;
+}
+
+.zoom {
+    background: #00ca56;
+    font-size: 9pt;
+    line-height: 11px;
+    margin-left: 6px;
+    width: 11px;
+    height: 12px;
+    border: 1px solid #14ae46;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.zoom:active {
+    background: #029740;
+    border: 1px solid #128435;
+}
+
+.zoom:active .zoombutton {
+    color: #003107;
+}
+
+.zoombutton {
+    color: #006519;
+    visibility: hidden;
+    cursor: default;
+}
+
+.content {
+    font-family: "Titillium Web",serif;
+    text-align: center;
+    padding-bottom:20px;
+
+}
+
+.content h3{
+    font-size:25px;
+    color: white;
+    /*color: #82b9ff;*/
+}
+
+.content h1{
+    transform: skew(-15deg);
+    font-size:45px;
+    line-height:170%;
+    /*color: #6fb3ff;*/
+    color: white;
+}
+
+.content p{
+    /*color: #3A6D8c;*/
+    color: #ffffff;
+    font-size:20px;
+    display:inline-block;
+    width:65%;
+}
+
+.button{
+    padding: 5px 10px;
+    border:3px solid #82b9ff;
+    border-radius: 10px;
+    color: white;
+    background-color: #25354a
+
+}
+
+.mac-first{
+    text-align:left;
+    padding-bottom:10px;
+}
+
+.content h5{
+    font-size:15px;
+    color:white;
+}
+
+.minmic{
+    word-spacing: 5px;
+}
+.content span{
+    line-height:0;
+
+}
+
+.resume{
+    margin-top:20px;
+}
+
+@media screen and (max-width: 640px) {
+    .content h5{
+        font-size:10px;
+    }
+}
+
+
+/*vertical tabs*/
+
+.experience{
+    margin-top:40px;
+}
+
+.margin-container{
+    margin: 0 10vw;
+
+}
+
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 300px;
+}
+
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 300px;
+}
+
+
+
+
+
+
+
+
+
