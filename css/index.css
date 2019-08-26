@@ -6,7 +6,6 @@ body{
     color:white;
     overflow-x:hidden;
     box-sizing:border-box;
-
 }
 
 
@@ -36,7 +35,7 @@ body{
 }
 
 .titlebar {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #ebebeb, color-stop(1.0, #d5d5d5)));
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #ebebeb), color-stop(1, #d5d5d5));
     background: -webkit-linear-gradient(top, #ebebeb, #d5d5d5);
     background: -moz-linear-gradient(top, #ebebeb, #d5d5d5);
     background: -ms-linear-gradient(top, #ebebeb, #d5d5d5);
@@ -273,7 +272,7 @@ body{
     text-align: left;
     cursor: pointer;
     transition: 0.3s;
-    font-size: 17px;
+    font-size: calc(7px + .65vw);
     height:100px;
 
 }
@@ -293,7 +292,7 @@ body{
 .tabcontent {
     float: left;
     padding: 0px 12px;
-    /*border: 2px solid #e2003b;*/
+    /*border-bottom: 2px solid #aa9cc9;*/
     border-radius:15px;
     width: 70%;
     border-left: none;
@@ -302,8 +301,13 @@ body{
 }
 
 .tabcontent p{
-    font-size:15px;
+    font-size: calc(10px + .65vw);
     color: #b7b7b7;
+}
+
+.tabcontent h3{
+    font-size: calc(10px + .65vw);
+
 }
 
 .details{
@@ -313,7 +317,7 @@ body{
 
 }
 
-ul{
+.details ul{
     position:relative;
     list-style:none;
     margin-left:0;
@@ -321,7 +325,7 @@ ul{
     color: #f3f3f3;
 }
 
-ul li:before{
+.details ul li:before{
     color:#8fcbd6;
     content:"\25B9";
     position:absolute;
@@ -329,8 +333,12 @@ ul li:before{
 }
 
 @media screen and (max-width: 640px) {
-
-
+    .tabcontent{
+        height:500px;
+    }
+    .tab{
+        height:500px;
+    }
 
 }
 
