@@ -13,7 +13,6 @@
 
 </head>
 
-
 <body onload="preloader()" style="margin:0;">
 
 <div id="loader"></div>
@@ -60,18 +59,18 @@
 </section>
 
 
-<section style="background-color:#0C141A;min-height:95vh;">
+<section style="background-color:#0C141A;min-height:100vh;">
 
-<fieldset class="experience">
+<fieldset class="F1">
 <legend class="legend">Experience</legend>
 
 <div class="margin-container">
 
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'SyncIOT')" id="defaultOpen">SyncIOT Technologies</button>
-  <button class="tablinks" onclick="openCity(event, 'Chamber')">Greater Flushing Chamber of Commerce</button>
-  <button class="tablinks" onclick="openCity(event, 'Kidmoto')">Kidmoto Technologies</button>
-  <button class="tablinks" onclick="openCity(event, 'Hodori')">Hodori Afterschool Program</button>
+  <button class="tablinks" onclick="openTab(event, 'SyncIOT')" id="defaultOpen">SyncIOT Technologies</button>
+  <button class="tablinks" onclick="openTab(event, 'Chamber')">Greater Flushing Chamber of Commerce</button>
+  <button class="tablinks" onclick="openTab(event, 'Kidmoto')">Kidmoto Technologies</button>
+  <button class="tablinks" onclick="openTab(event, 'Hodori')">Hodori Afterschool Program</button>
 </div>
 
 
@@ -151,13 +150,64 @@ background-repeat:no-repeat;">
 </fieldset>
 </section>
 
+<section style="background-color:#0C141A;min-height:100vh;">
+
+<fieldset class="F1">
+<legend class="legend">Skills</legend>
+</fieldset>
+
+
+<div class="main-wrapper">
+    <div class="badge python">
+        <div class="circle" style="background-image:url(img/python.ico);background-size:contain;"> </div>
+        <div class="ribbon">Python</div>
+    </div>
+    <div class="badge cPlus">
+        <div class="circle" style="background-image:url(img/c++.png);background-repeat: no-repeat;background-position:3px;"> </div>
+        <div class="ribbon">C++</div>
+    </div>
+    <div class="badge html">
+        <div class="circle" style="background-image:url(img/html.png);background-repeat: no-repeat;background-position:7.5px;"> </div>
+        <div class="ribbon">HTML</div>
+    </div>
+    <div class="badge css">
+        <div class="circle" style="background-image:url(img/css.jpg);background-repeat: no-repeat;background-position:8.5px;"> </div>
+        <div class="ribbon">CSS</div>
+    </div>
+    <div class="badge javascript">
+        <div class="circle" style="background-image:url(img/javascript.jpeg);background-repeat: no-repeat;background-position:15px -5px;"> </div>
+        <div class="ribbon">Javascript</div>
+    </div>
+    <div class="badge node">
+        <div class="circle" style="background-image:url(img/node.png);background-repeat: no-repeat;background-position:8px;"> </div>
+        <div class="ribbon">NodeJS</div>
+    </div>
+    <div class="badge flask">
+        <div class="circle" style="background-image:url(img/flask.jpg);background-repeat: no-repeat;background-position:8px;"> </div>
+        <div class="ribbon">Flask</div>
+    </div>
+        <div class="badge sql">
+            <div class="circle" style="background-image:url(img/mySQL.png);background-repeat: no-repeat;background-position:7.5px;"> </div>
+            <div class="ribbon">MySQL</div>
+        </div>
+        <div class="badge mongo">
+            <div class="circle" style="background-image:url(img/mongoDB.png);background-size:contain;background-position:8.5px;"> </div>
+            <div class="ribbon">MongoDB</div>
+        </div>
+        <div class="badge influx">
+            <div class="circle" style="background-image:url(img/influx.png);background-size:contain;background-position:1px;background-repeat: no-repeat;"> </div>
+            <div class="ribbon">InfluxDB</div>
+        </div>
+    </div>
+
+
+</section>
+
+
+
 
 </div>
-
-
 </body>
-
-
 <script>
 
 
@@ -241,7 +291,7 @@ background-repeat:no-repeat;">
             document.getElementById('day').innerHTML=weekday[time.getDay()];
     }
 
-    function openCity(evt, work) {
+    function openTab(evt, work) {
       var i, tabcontent, tablinks;
       tabcontent = document.getElementsByClassName("tabcontent");
       for (i = 0; i < tabcontent.length; i++) {

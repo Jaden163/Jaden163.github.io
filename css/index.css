@@ -2,7 +2,7 @@
 
 body{
     /*background-color: #e6e6e6;*/
-    background-color: #101010;
+    background-color: #0C141A;
     color:white;
     overflow-x:hidden;
     box-sizing:border-box;
@@ -240,7 +240,7 @@ body{
     background:white;
 }
 
-.experience{
+.F1{
     margin-left:5%;
     width:90%;
     border:none;
@@ -250,7 +250,7 @@ body{
 
 .margin-container{
     margin: 0 5vw;
-    margin-top:20px;
+    margin-top:35px;
 }
 
 .tab {
@@ -343,6 +343,119 @@ body{
 }
 
 
+/* Skills section*/
+.main-wrapper {
+    width: 85%;
+    margin: 3em auto;
+    text-align: center;
+}
+
+.badge {
+    position: relative;
+    margin: 1.5em 3em;
+    width: 6em;
+    height: 10em;
+    border-radius: 10px;
+    display: inline-block;
+    top: 0;
+    transition: all 0.2s ease;
+}
+.badge:before, .badge:after {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background: inherit;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.badge:before {
+    transform: rotate(60deg);
+}
+.badge:after {
+    transform: rotate(-60deg);
+}
+.badge .circle {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    background: #fff;
+    z-index: 1;
+    border-radius: 50%;
+    top: 0;
+    left: -10px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.badge .circle i.fa {
+    font-size: 2em;
+    margin-top: 15px;
+}
+.badge .font {
+    display: inline-block;
+    margin-top: 1em;
+}
+.badge .ribbon {
+    position: absolute;
+    border-radius: 4px;
+    width: 120px;
+    z-index:1;
+    color: #fff;
+    margin-top: 135px;
+    padding:2px 12px;
+    left: 50%;
+    margin-left: -60px;
+    font-size: 17px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.27);
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    background: #3A6D8c;
+    cursor: default;
+}
+
+.python {
+    background: linear-gradient(to bottom right, #1976D2 0%, #283593 100%);
+}
+
+.cPlus {
+    background: linear-gradient(to bottom right, #56A680 0%, #00796B 100%);
+}
+
+.sql {
+    background: linear-gradient(to bottom right, #4479a0 0%, #2c4059 100%);
+}
+
+.mongo{
+    background: linear-gradient(to bottom right, #cddc39 0%, #8bc34a 100%);
+}
+
+.influx{
+    background: linear-gradient(to bottom right, #E0E0E0 0%, #BDBDBD 100%);
+}
+
+.html{
+    background: linear-gradient(to bottom right, #f4511e 0%, #b71c1c 100%);
+}
+
+.css{
+    background: linear-gradient(to bottom right, #4FC3F7 0%, #2196F3 100%);
+}
+
+.javascript{
+    background: linear-gradient(to bottom right, #ffeb3b 0%, #fbc02d 100%);
+}
+
+.node{
+    background: linear-gradient(to bottom right, #4CAF50 0%, #1B5E20 100%);
+}
+
+.flask{
+    background: linear-gradient(to bottom right, #606060 0%, #000000 100%);
+}
 
 
 

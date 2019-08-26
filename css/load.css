@@ -35,7 +35,7 @@ body {
 }
 
 @media screen and (max-width: 640px) {
-    span{
+    .mid-container span{
         font-size:28px;
     }
 }
