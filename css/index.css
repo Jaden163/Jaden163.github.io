@@ -339,7 +339,6 @@ body{
     .tab{
         height:500px;
     }
-
 }
 
 
@@ -457,7 +456,164 @@ body{
     background: linear-gradient(to bottom right, #606060 0%, #000000 100%);
 }
 
+.pythonRes{
+    background-image:url(../img/python.ico) !important;
+    background-size:contain !important;
+}
 
+.cPlusRes{
+    background-image:url(../img/c++.png) !important;
+    background-repeat: no-repeat !important;
+    background-position:3px !important;
+    background-size:0;
+}
+
+.htmlRes{
+    background-image:url(../img/html.png) !important;
+    background-repeat: no-repeat !important;
+    background-position:7.5px !important;
+}
+
+.cssRes{
+    background-image:url(../img/css.jpg) !important;
+    background-repeat: no-repeat !important;
+    background-position:8.5px !important;
+}
+
+.javascriptRes{
+    background-image:url(../img/javascript.jpeg) !important;
+    background-repeat: no-repeat !important;
+    background-position:15px -5px !important;
+}
+
+.nodeRes{
+    background-image:url(../img/node.png) !important;
+    background-repeat: no-repeat !important;
+    background-position:8px !important;
+}
+
+.flaskRes{
+    background-image:url(../img/flask.jpg) !important;
+    background-repeat: no-repeat!important;
+    background-position: 8px !important;
+}
+
+.sqlRes{
+    background-image:url(../img/mySQL.png) !important;
+    background-repeat: no-repeat!important;
+    background-position: 7.5px !important;
+}
+
+.mongoRes{
+    background-image:url(../img/mongoDB.png) !important;
+    background-size:contain!important;
+    background-position: 8.5px !important;
+}
+
+.influxRes{
+    background-image:url(../img/influx.png) !important;
+    background-size:contain!important;
+    background-position: 1px !important;
+    background-repeat: no-repeat!important;
+}
+
+
+
+
+
+@media screen and (max-width: 640px) {
+    .main-wrapper {
+        width: 100%;
+        text-align: center;
+    }
+    .badge {
+        position: relative;
+        margin: 5vw 10vw;
+        width: 4em;
+        height: 6.2em;
+        border-radius: 10px;
+        display: inline-block;
+        top: 0;
+        transition: all 0.2s ease;
+    }
+    .badge:before, .badge:after {
+        position: absolute;
+        width: inherit;
+        height: inherit;
+        border-radius: inherit;
+        background: inherit;
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    .badge:before {
+        transform: rotate(60deg);
+    }
+    .badge:after {
+        transform: rotate(-60deg);
+    }
+    .badge .circle {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        background: #fff;
+        border-radius: 50%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    .badge .font {
+        display: inline-block;
+        margin-top: 1em;
+    }
+    .badge .ribbon {
+        position: absolute;
+        border-radius: 4px;
+        width: 100px;
+        color: #fff;
+        margin-top: 83px;
+        padding:1px 2px;
+        left: 50%;
+        margin-left: -50px;
+        font-size: 17px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.27);
+        text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+        background: #3A6D8c;
+        cursor: default;
+    }
+    .cPlusRes{
+        background-size:55px !important;
+    }
+    .htmlRes{
+        background-size:45px !important;
+    }
+    .cssRes{
+        background-size:45px !important;
+    }
+    .javascriptRes{
+        background-size:50px !important;
+        background-position:6px !important;
+    }
+    .flaskRes{
+        background-size:45px !important;
+    }
+    .nodeRes{
+        background-size:45px !important;
+    }
+    .sqlRes{
+        background-size:45px !important;
+    }
+    .mongoRes{
+        background-position:5px !important;
+    }
+
+
+}
 
 
 
