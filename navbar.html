@@ -26,14 +26,12 @@
             <a href="#" class="nav-links">About</a>
         </li>
         <li>
-            <a href="#" class="nav-links">Experience</a>
+            <a href="#experience" class="nav-links">Experience</a>
         </li>
         <li>
-            <a href="#" class="nav-links">Skills</a>
+            <a href="#skills" class="nav-links">Skills</a>
         </li>
-        <li>
-            <a href="#" class="nav-links">Contact</a>
-        </li>
+
     </ul>
 </div><br class="bug">
 </section>
@@ -46,6 +44,10 @@
 
     navBarToggle.addEventListener("click", function() {
         mainNav.classList.toggle("active");
+    });
+
+    mainNav.addEventListener('click',function(){
+        navBarToggle.click();
     });
 
 </script>

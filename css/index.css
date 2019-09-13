@@ -332,6 +332,16 @@ body{
     left:0;
 }
 
+@media screen and (max-height:575px){
+    .tabcontent{
+        height:550px;
+    }
+    .tab{
+        height:550px;
+    }
+
+}
+
 @media screen and (max-width: 640px) {
     .tabcontent{
         height:500px;
@@ -611,8 +621,6 @@ body{
     .mongoRes{
         background-position:5px !important;
     }
-
-
 }
 
 
