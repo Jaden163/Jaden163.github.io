@@ -9,7 +9,7 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
+<body style="background-color:black;">
 
 
 
@@ -31,7 +31,7 @@ getGreeting();
 
 var data = [
   {
-    text: "<span>Welcome to my website!  </span>"
+    text: "<span>Welcome to my website!</span>"
   }
 ];
 
@@ -47,14 +47,20 @@ for (var j = 0; j < allElements.length; j++) {
   (function type() {
     text = devTypeText.slice(0, ++i);
     if (text === devTypeText) return;
-    element.innerHTML = text + `<span class='blinker'>&#32;</span>`;
+    element.innerHTML = text;
     var char = text.slice(-1);
     if (char === "<") isTag = true;
     if (char === ">") isTag = false;
     if (isTag) return type();
     setTimeout(type, 100);
+
   })();
+
+
 }
+
+
+
 
 function getGreeting(){
     let time=new Date();

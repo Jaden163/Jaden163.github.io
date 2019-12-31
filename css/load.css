@@ -12,14 +12,13 @@
     text-align:center;
     margin-top:20vh;
 
-
 }
 
 .blinker {
     opacity: 1;
     margin-bottom: -2px;
     height: 15px;
-    margin-left: -15px;
+    margin-left: -5px;
     border-left: 15px solid #66ff66;
     animation: blinker 0.9s steps(2, start) infinite;
 }
