@@ -766,6 +766,14 @@ body{
 		 background: linear-gradient(to right, #333333 25%, transparent 100%);
 	}
 
+	#IntroGames .info_section {
+		 background: linear-gradient(to right, #333333 25%, transparent 100%);
+	}
+
+	#Finstagram .info_section {
+		 background: linear-gradient(to right, #333333 25%, transparent 100%);
+	}
+
 
 
 
@@ -820,7 +828,10 @@ body{
 
 .IntroGames{
 	 background: url("../img/mario.png");
+}
 
+.Finstagram{
+	 background: url("../img/insta.png");
 }
 
 
