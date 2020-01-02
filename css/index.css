@@ -8,6 +8,11 @@ body{
     box-sizing:border-box;
 }
 
+a{
+    text-decoration:none !important;
+}
+a:visited { text-decoration: none; color:white; }
+
 
 
 /*mac window*/
@@ -691,7 +696,7 @@ body{
 }
  .movie_card .info_section .movie_header .type {
 	 display: inline-block;
-	 color: white;
+	 color: white !important;
 	 margin-top:10px;
 
 }

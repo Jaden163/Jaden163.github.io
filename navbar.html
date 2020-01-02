@@ -14,25 +14,25 @@
 
 
 <section class="nav">
-<div class="navbar">
-<span class="navbar-toggle" id="js-navbar-toggle">
+<div class="Mynavbar">
+<span class="Mynavbar-toggle" id="js-navbar-toggle">
         <i class="fa fas fa-bars"></i>
     </span>
-    <a href="#">
+    <a href="index.html">
         <img class="logo" src="img/logo.png">
     </a>
     <ul class="main-nav" id="js-menu">
         <li>
-            <a href="#" class="nav-links">About</a>
+            <a href="index.html" class="nav-links">About</a>
         </li>
         <li>
-            <a href="#experience" class="nav-links">Experience</a>
+            <a href="index.html#experience" class="nav-links">Experience</a>
         </li>
         <li>
-            <a href="#projects" class="nav-links">Projects</a>
+            <a href="index.html#projects" class="nav-links">Projects</a>
         </li>
         <li>
-            <a href="#skills" class="nav-links">Skills</a>
+            <a href="index.html#skills" class="nav-links">Skills</a>
         </li>
         <li>
             <a href="https://github.com/Jaden163/Projects" target="_blank" class="nav-links">GitHub</a>
@@ -45,14 +45,14 @@
 <script>
 
     let mainNav = document.getElementById("js-menu");
-    let navBarToggle = document.getElementById("js-navbar-toggle");
+    let MynavBarToggle = document.getElementById("js-navbar-toggle");
 
-    navBarToggle.addEventListener("click", function() {
+    MynavBarToggle.addEventListener("click", function() {
         mainNav.classList.toggle("active");
     });
 
     mainNav.addEventListener('click',function(){
-        navBarToggle.click();
+        MynavBarToggle.click();
     });
 
 </script>
